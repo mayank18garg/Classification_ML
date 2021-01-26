@@ -7,15 +7,21 @@ import joblib
 
 app = Flask(__name__)
 
-transform=joblib.load("transform.pkl")
-class_model=joblib.load("resnet_model.pkl")
 
 @app.route('/')   # routing_handler
 def hello_world():
     return "Hello this is Classification app for images!\n"
-    
+
+@app.route('/test')
+def test():
+    return "Works!"
+
+
+
 @app.route('/classification', methods=['POST'])
 def classification():
+    transform=joblib.load("transform.pkl")
+    class_model=joblib.load("resnet_model.pkl")
     files = request.files['imagefile']
     image = Image.open(files.stream)
     img_t = transform(image)

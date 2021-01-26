@@ -1,0 +1,4 @@
+language: python3
+
+script:
+  - python3 -m pytest -v
