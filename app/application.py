@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')   # routing_handler
 def hello_world():
-    return "Hello this is Classification app for images!\n"
+    return "Hello this is Classification app for Images!\n"
 
 @app.route('/test')
 def test():
