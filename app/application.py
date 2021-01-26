@@ -12,8 +12,8 @@ class_model=joblib.load("resnet_model.pkl")
 
 @app.route('/')   # routing_handler
 def hello_world():
-    return "Hello Sanket\n"
-
+    return "Hello Sanket1\n"
+    
 @app.route('/classification', methods=['POST'])
 def classification():
     files = request.files['imagefile']
