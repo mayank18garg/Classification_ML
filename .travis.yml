@@ -1,4 +1,8 @@
-language: python3
+language: python
+os:
+  - linux
+
+dist: xenial
 
 install: pip3 install -r requirements_travis.txt
 
