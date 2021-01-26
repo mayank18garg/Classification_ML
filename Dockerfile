@@ -8,14 +8,15 @@ FROM python:3.8-slim
 
 WORKDIR /app
 
-COPY . /app
+COPY ./app /app
 
 RUN pip3 --no-cache-dir install -r requirements.txt
 
 EXPOSE 5000
 
-ENTRYPOINT ["python3"]
-CMD ["application.py"]
+# ENTRYPOINT ["python3"]
+# CMD ["application.py"]
+CMD gunicorn --bind 0.0.0.0:$PORT wsgi
 
 
 
