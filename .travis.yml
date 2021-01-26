@@ -1,5 +1,7 @@
 language: python3
 
+install: pip3 install -r requirements_travis.txt
+
 script:
   - export PYTHONPATH=app
   - python3 -m pytest -v
