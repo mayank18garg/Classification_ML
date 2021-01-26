@@ -12,7 +12,7 @@ class_model=joblib.load("resnet_model.pkl")
 
 @app.route('/')   # routing_handler
 def hello_world():
-    return "Hello World\n"
+    return "Hello Mayank\n"
 
 @app.route('/classification', methods=['POST'])
 def classification():
