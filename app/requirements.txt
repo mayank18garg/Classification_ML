@@ -3,13 +3,13 @@ Pillow
 joblib
 -f https://download.pytorch.org/whl/torch_stable.html
 torch==1.7.1+cpu
--f https://download.pytorch.org/whl/torch_stable.html
-torchvision==0.8.2+cpu
--f https://download.pytorch.org/whl/torch_stable.html
-torchaudio==0.7.2
+# -f https://download.pytorch.org/whl/torch_stable.html
+# torchvision==0.8.2+cpu
+# -f https://download.pytorch.org/whl/torch_stable.html
+# torchaudio==0.7.2
 gunicorn==19.9.0
-itsdangerous==1.1.0
+# itsdangerous==1.1.0
 # Jinja==2.10.1
-Jinja2
-Werkzeug
+# Jinja2
+# Werkzeug
 pytest
