@@ -1,6 +1,4 @@
 from flask import Flask , request
-# from torchvision import models
-# from torchvision import transforms
 from PIL import Image
 import torch
 import joblib
@@ -9,7 +7,7 @@ app = Flask(__name__)
 
 
 @app.route('/')   # routing_handler
-def hello_world():
+def index():
     return "Hello this is Classification app for Images!\n"
 
 @app.route('/test')
